@@ -1,0 +1,2 @@
+Observação: v-bind faz a ligação entre o código fonte e a ligação com conteúdos de tags. Ele resolve os conteúdos.
+A propriedade v-once exibe a alteração de um elemento apenas uma vez.

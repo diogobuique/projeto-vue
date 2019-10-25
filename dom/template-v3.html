@@ -1,0 +1,28 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<div id="app">
+    <p>{{titulo}}</p>
+    <p>{{subtitulo}}</p>
+    <p>{{saudacao}}</p>
+    <a v-bind:href="link">Google</a>
+</div>
+
+<script>
+    new Vue({
+        el:'#app',
+        data:{
+            titulo: 'Usando VueJs2 - DOM',
+            subtitulo: 'Testando uma parada aqui',
+            saudacao: 'Boa semana!!',
+            link:'http://www.google.com.br'
+
+        },
+        methods:{
+            saudacao: function(){
+                console.log(this)
+                return this.titulo
+            }
+        }
+    })
+</script>
